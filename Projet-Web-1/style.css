@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  background-color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  height: 4rem;
+  background-color: #a306b6;
+}
+
+.links-container {
+  display: flex;
+  gap: 2rem;
+  
+}
+
+.navlinks {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform .2s;
+}
+.navlinks:hover {
+  color: black;
+  transform: scale(1.09);
+}
+
+.header-page {
+  background-color: #a306b6;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  min-height: 350px;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+  line-height: 1.2;
+}
+
+.logo-wcs {
+  width: 50px;
+  height: auto;
+}
+
+
+.article-container {
+  text-align: center;
+  color: #a306b6;
+  font-size: 2rem;
+}
+
+.avatar-picture {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  padding: 2.5px;
+  border-radius: 50%;
+}
+
+
+.cards-container {
+  gap: 4rem;
+  margin-bottom: 50px;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-one,
+.card-two,
+.card-three {
+  width: 300px;
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 2px 2px 12px 3px rgba(0,0,0,0.5);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+.card-title{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 0 20px 0;
+  color: black;
+}
+
+.card-button {
+  background-color: #a306b6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  transition: transform .2s;
+}
+
+.card-button:hover {
+  background-color: #660670;
+  transform: scale(1.08);
+}
+
+.about-container {
+  max-width: 65ch;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.about-container h2 {
+  text-align: center;
+  color: #a306b6;
+  font-size: 3rem;
+}
+
+footer {
+  background-color: rgb(224, 224, 224);
+  text-align: center;
+  padding: 5px;
+  line-height: 10px;
+}
+
+@media screen and (max-width:600px){
+  .navbar{
+    flex-direction: column;
+  }
+  .header-page{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .about-paragraphs{
+    margin: 50px;
+  }
+}
