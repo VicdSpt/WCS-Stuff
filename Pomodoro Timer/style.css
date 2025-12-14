@@ -1,0 +1,78 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #11611f 0%, #55ae4b 100%);
+}
+
+.container {
+  background: #fff;
+  border-radius: 15px;
+  width: 500px;
+  height: 320px;
+  padding: 20px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+
+.time{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.buttons-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  width: 100px;
+  height: 75px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 15px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  transition: transform .2s;
+}
+#btn-start {
+  background-color: #27ae60;
+}
+#btn-start:hover{
+    background-color: #11611f;
+    transform: scale(1.03);
+}
+
+#btn-stop {
+  background-color: #c0392b;
+}
+#btn-stop:hover{
+    background-color: #962417;
+    transform: scale(1.03);
+}
+
+#btn-reset {
+  background-color: #7f8c8d;
+}
+#btn-reset:hover{
+    background-color: #6f797a;
+    transform: scale(1.03);
+}
+
+
