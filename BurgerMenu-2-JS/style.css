@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.burger-menu span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.burger-menu.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navLinks li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.navLinks li a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Demo content */
+.content-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content-container h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .burger-menu {
+    display: flex; /* Show burger on mobile */
+    position: relative;
+    z-index: 1001; /* Stay on top of menu */
+  }
+
+  .navLinks {
+    position: fixed;
+    left: -100%; /* Hidden off-screen */
+    top: 0;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: left 0.3s ease;
+    padding-top: 5rem;
+    gap: 3rem;
+    z-index: 1000;
+  }
+
+  .navLinks.active {
+    left: 0; /* Slide in from left */
+  }
+
+  .navLinks li a {
+    font-size: 1.5rem;
+  }
+
+  /* Keep navbar visible when menu is open */
+  .navbar {
+    position: relative;
+    z-index: 1001;
+  }
+}
