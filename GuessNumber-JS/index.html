@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎯 Number Guessing Game</h1>
+        <p class="subtitle">I'm thinking of a number between 1 and 100</p>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number" id="attempts">0</div>
+                <div class="stat-label">Attempts</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="totalGuesses">0</div>
+                <div class="stat-label">Total Guesses</div>
+            </div>
+        </div>
+
+        <div class="input-group" id="gameInput">
+            <input type="number" id="guessInput" placeholder="Enter your guess..." min="1" max="100">
+            <button class="btn-guess" onclick="checkGuess()">Guess</button>
+        </div>
+
+        <div id="message" class="message hidden"></div>
+
+        <button class="btn-restart hidden" id="restartBtn" onclick="restartGame()">🔄 Play Again</button>
+
+        <div class="history">
+            <h3>Your Guess History:</h3>
+            <div class="history-items" id="historyContainer">
+                <span style="color: #999;">No guesses yet...</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
