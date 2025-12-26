@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prêt Bancaire en JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="loan-app-page">
+        <div class="loan-app">
+            <form class="loan-app__form">
+                <div class="loan-app__inputs-container">
+
+                    <div class="loan-app__input-group">
+                        <label for="loan-amount" class="loan-app__label">
+                            <span class="loan-app__label--info">Montant du prêt:</span>
+                            <span class="loan-app__label--figure js-loan-amount">10000€</span>
+                        </label>
+                        <input type="range" class="loan-app__range-input" id="loan-amount" min="5000" max="200000" step="100">
+                        <div class="loan-app__loan-limits">
+                            <p class="loan-app__loan-limit">5.000€</p>
+                            <p class="loan-app__loan-limit">200.000€</p>
+                        </div>
+                    </div>
+
+                    <div class="loan-app__input-group">
+                        <label for="repayment" class="loan-app__label">
+                            <span class="loan-app__label--info">Remboursement (en mois):</span>
+                            <span class="loan-app__label--figure js-repayment-duration">42</span>
+                        </label>
+                        <input type="range" class="loan-app__range-input" id="repayment" min="12" max="300">
+                        <div class="loan-app__loan-limits">
+                            <p class="loan-app__loan-limit">12</p>
+                            <p class="loan-app__loan-limit">300</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="loan-app__results">
+                <p class="loan-app__description">
+                    <span class="loan-app__description--styled-txt">Calculateur</span> de prêt - Taux fixe à 2.95%
+                </p>
+                <div class="loan-app__result">
+                    <p class="loan-app__result-info">Total:</p>
+                    <p class="loan-app__result-value js-total-value">10.700€</p>
+                </div>
+                <div class="loan-app__result">
+                    <p class="loan-app__result-info">Payement par mois:</p>
+                    <p class="loan-app__result-value js-monthly-payment">255€</p>
+                </div>
+                <div class="loan-app__result">
+                    <p class="loan-app__result-info">Intérêt total:</p>
+                    <p class="loan-app__result-value js-total-interest">500€</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
