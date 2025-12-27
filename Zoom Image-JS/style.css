@@ -1,0 +1,56 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: brown;
+    padding-top: 125px;
+}
+
+.images-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.zoom-container{
+    overflow: hidden;
+    /* max-width: 500px; */
+    margin: 0 auto;
+    height: 600px;
+    width: 800px;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+.zoom-container-two{
+    overflow: hidden;
+    /* max-width: 500px; */
+    margin: 0 auto;
+    height: 850px;
+    width: 800px;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+#zoom-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#zoom-image:hover{
+    cursor: crosshair;
+    scale: 2;
+}
+
+#zoom-image-two{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#zoom-image-two:hover{
+    cursor: crosshair;
+    scale: 4;
+}
+
