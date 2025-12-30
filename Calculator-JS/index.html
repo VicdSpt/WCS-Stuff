@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator in JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calculator">
+
+            <div class="display" id="display"></div>
+
+            <div class="buttons">
+                <button class="btn btn-clear" onclick="clearCalculator()">Clear</button>
+                <button class="btn btn-operation" onclick="useOperationsButtons('/')">&divide;</button>
+                <button class="btn btn-operation" onclick="useOperationsButtons('*')">&times;</button>
+                <button class="btn btn-delete" onclick="handleDelete()">DEL</button>
+
+                <button class="btn btn-number" onclick="useNumberClick(7)">7</button>
+                <button class="btn btn-number" onclick="useNumberClick(8)">8</button>
+                <button class="btn btn-number" onclick="useNumberClick(9)">9</button>
+                <button class="btn btn-operation" onclick="useOperationsButtons('-')">-</button>
+
+                <button class="btn btn-number" onclick="useNumberClick(4)">4</button>
+                <button class="btn btn-number" onclick="useNumberClick(5)">5</button>
+                <button class="btn btn-number" onclick="useNumberClick(6)">6</button>
+                <button class="btn btn-operation" onclick="useOperationsButtons('+')">+</button>
+
+                <button class="btn btn-number" onclick="useNumberClick(1)">1</button>
+                <button class="btn btn-number" onclick="useNumberClick(2)">2</button>
+                <button class="btn btn-number" onclick="useNumberClick(3)">3</button>
+                <button class="btn btn-equals" onclick="handleEquals()">=</button>
+
+                <button class="btn btn-number btn-zero" onclick="useNumberClick(0)">0</button>
+                <button class="btn btn-number" onclick="showDecimalNumber()">.</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
