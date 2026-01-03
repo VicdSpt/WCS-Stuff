@@ -1,0 +1,114 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.info p {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#game-canvas {
+    background-color: #1a1a1a;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls p {
+    color: white;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.restart-btn, .play-again-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.restart-btn:hover, .play-again-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.restart-btn:active, .play-again-btn:active {
+    transform: scale(0.95);
+}
+
+.game-over {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.game-over h2 {
+    color: #ff4444;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.game-over p {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 25px;
+}
+
+.hidden {
+    display: none;
+}

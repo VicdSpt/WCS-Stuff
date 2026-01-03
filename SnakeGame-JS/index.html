@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game in JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Snake Game</h1>
+        
+        <div class="info">
+            <p>Score: <span id="current-score">0</span></p>
+            <p>High Score: <span id="high-score">0</span></p>
+        </div>
+        
+        <canvas id="game-canvas" width="800" height="800"></canvas>
+        
+        <div class="controls">
+            <p>Use Arrow Keys to move</p>
+            <button id="restart" class="restart-btn">Restart Game</button>
+        </div>
+        
+        <div id="game-over" class="game-over hidden">
+            <h2>Game Over!</h2>
+            <p>Your Score: <span id="final-score">0</span></p>
+            <button id="play-again" class="play-again-btn">Play Again</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
