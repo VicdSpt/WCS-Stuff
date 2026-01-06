@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Word in JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Guess the 5 Letter Word</h1>
+        <p class="instructions">You have 6 attempts to guess the word!</p>
+
+        <div id="game-board"></div>
+
+        <div class="input-section">
+            <input type="text" id="guess-input" maxlength="5" placeholder="Enter your guess" autocomplete="off">
+            <button id="submit-btn">Submit</button>
+        </div>
+
+        <div id="message"></div>
+        <button id="restart-btn" class="hidden">Play Again</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

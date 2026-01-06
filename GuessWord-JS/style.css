@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #514f4f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.instructions {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#game-board {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.letter-box {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.letter-box.correct {
+    background-color: #6aaa64;
+    color: white;
+    border-color: #6aaa64;
+}
+
+.letter-box.present {
+    background-color: #c9b458;
+    color: white;
+    border-color: #c9b458;
+}
+
+.letter-box.absent {
+    background-color: #787c7e;
+    color: white;
+    border-color: #787c7e;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#guess-input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+#guess-input:focus {
+    outline: none;
+    border-color: #6aaa64;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6aaa64;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #5a9a54;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#message {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    min-height: 25px;
+}
+
+#message.win {
+    color: #6aaa64;
+}
+
+#message.lose {
+    color: #d94545;
+}
+
+.hidden {
+    display: none;
+}
+
+#restart-btn {
+    background-color: #6aaa64;
+    margin-top: 10px;
+}
